@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
 :root.light {
   --color-base: #121212;
   --color-bg-base: #eeeeee;
@@ -14,6 +19,7 @@ html, body {
   background-color: var(--color-bg-base);
   margin: 0;
   padding: 0;
+  font-family: Roboto;
 }
 
 #container {
