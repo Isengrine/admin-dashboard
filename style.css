@@ -1,0 +1,14 @@
+:root.light {
+    --color-base: #121212;
+    --color-bg-base: #eeeeee;
+}
+
+:root.dark {
+    --color-base: #ffffffe6;
+    --color-bg-base: #121212;
+}
+
+body {
+    color: var(--color-base);
+    background-color: var(--color-bg-base);
+}
