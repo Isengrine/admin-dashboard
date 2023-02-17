@@ -12,3 +12,17 @@ body {
     color: var(--color-base);
     background-color: var(--color-bg-base);
 }
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#banner {
+  grid-column: 2 / 3;
+}
