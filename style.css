@@ -90,5 +90,5 @@ html, body {
   background-color: var(--color-ui-02);
   margin: 0;
   grid-column: 1 / 3;
-  align-items: end;
+  align-self: end;
 }
