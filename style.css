@@ -1,16 +1,17 @@
 :root.light {
-    --color-base: #121212;
-    --color-bg-base: #eeeeee;
+  --color-base: #121212;
+  --color-bg-base: #eeeeee;
 }
 
 :root.dark {
-    --color-base: #ffffffe6;
-    --color-bg-base: #121212;
+  --color-base: #ffffffe6;
+  --color-bg-base: #121212;
 }
 
-body {
-    color: var(--color-base);
-    background-color: var(--color-bg-base);
+html, body {
+  height: 100vh;
+  color: var(--color-base);
+  background-color: var(--color-bg-base);
 }
 
 #container {
@@ -18,11 +19,44 @@ body {
   grid-template-columns: 1fr 6fr;
 }
 
+#sidebar {
+  background-color: red;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+}
+
+#personal {
+ display: flex;
+}
+
+#navbar {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+}
+
 #content {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 32px;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
 }
 
 #banner {
   grid-column: 2 / 3;
+}
+
+#footer, h6 {
+  background-color: purple;
+  margin: 0;
+  grid-column: 1 / 3;
+  align-items: end;
 }
