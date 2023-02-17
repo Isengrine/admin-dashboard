@@ -3,7 +3,7 @@
   --color-bg-base: #eeeeee;
 }
 
-:root.dark {
+:root {
   --color-base: #ffffffe6;
   --color-bg-base: #121212;
 }
@@ -12,6 +12,8 @@ html, body {
   height: 100vh;
   color: var(--color-base);
   background-color: var(--color-bg-base);
+  margin: 0;
+  padding: 0;
 }
 
 #container {
@@ -21,6 +23,11 @@ html, body {
 
 #sidebar {
   background-color: red;
+}
+
+#desktop {
+  display: grid;
+  gap: 12px;
 }
 
 #header {
@@ -50,8 +57,24 @@ html, body {
   grid-template-columns: repeat(auto-fit, 400px);
 }
 
+.project {
+  background-color: dimgray;
+  border-radius: 24px;
+  margin: 12px;
+}
+
 #banner {
   grid-column: 2 / 3;
+}
+
+#announcements {
+  background-color: firebrick;
+  border-radius: 24px;
+}
+
+#trending {
+  background-color: royalblue;
+  border-radius: 24px;
 }
 
 #footer, h6 {
