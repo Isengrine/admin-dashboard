@@ -3,6 +3,11 @@
   src: url(./fonts/Roboto-Regular.ttf);
 }
 
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+
 :root.light {
   --color-base: #121212;
   --color-bg-base: #eeeeee;
@@ -73,16 +78,28 @@ a {
 }
 
 #personal {
- display: flex;
- align-items: center;
- gap: 16px;
+  width: clamp(72px, 24%, 240px);
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 #profile-link {
-  height: 64px;
-  width: 64px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#profile-picture {
+  height: 70px;
+  width: 70px;
   border: solid;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+#profile-text {
+  font-family: Roboto-Bold;
 }
 
 #navbar {
