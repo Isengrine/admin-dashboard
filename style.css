@@ -22,7 +22,7 @@
 }
 
 html, body {
-  font-family: Roboto;
+  font-family: Roboto-Bold;
   height: 100vh;
   color: var(--color-base);
   background-color: var(--color-bg-base);
@@ -33,6 +33,10 @@ html, body {
 a {
   color: inherit;
   text-decoration: inherit;
+}
+
+p {
+  font-family: Roboto;
 }
 
 #container {
