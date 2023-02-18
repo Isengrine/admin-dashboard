@@ -99,6 +99,17 @@ a {
   background-color: var(--color-ui-03);
   border-radius: 24px;
   margin: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-interactions {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 24px;
 }
 
 #banner {
