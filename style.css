@@ -31,6 +31,7 @@ a {
 }
 
 #container {
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 6fr;
 }
@@ -49,10 +50,11 @@ a {
 
 #desktop {
   display: grid;
-  gap: 12px;
+  grid-template-rows: repeat(2, 1fr) 8fr;
 }
 
 #header {
+  height: clamp(74px, 24%, 144px);
   background-color: var(--color-ui-02);
   padding: 4px 24px 4px 24px;
   display: flex;
@@ -62,7 +64,7 @@ a {
 
 #search-bar {
   height: 24px;
-  width: clamp(200px, 800px, 1200px);
+  width: clamp(200px, 50%, 800px);
 }
 
 #personal {
@@ -80,6 +82,8 @@ a {
 
 #navbar {
   background-color: var(--color-ui-02);
+  height: clamp(48px, 20%, 64px);
+  align-self: center;
   display: flex;
   justify-content: space-between;
 }
@@ -109,7 +113,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: end;
-  gap: 24px;
+  gap: 48px;
 }
 
 #banner {
