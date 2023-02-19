@@ -37,6 +37,7 @@ a {
 
 p {
   font-family: Roboto;
+  margin: 0;
 }
 
 #container {
@@ -69,11 +70,13 @@ p {
 
 #header {
   height: clamp(74px, 24%, 144px);
-  background-color: var(--color-ui-02);
-  padding: 4px 24px 4px 24px;
+  background-color: #4d4d4d;
+  padding: 8px 24px 8px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0;
+  position: sticky;
 }
 
 #search-bar {
@@ -109,9 +112,21 @@ p {
 #navbar {
   background-color: var(--color-ui-02);
   height: clamp(48px, 20%, 64px);
+  margin: 0 12px 0 12px;
+  padding: 8px;
+  border-radius: 36px;
   align-self: center;
   display: flex;
   justify-content: space-between;
+}
+
+#greeting {
+  padding-left: 24px;
+}
+
+#navbar-username {
+  font-family: Roboto-Bold;
+  font-size: 20px;
 }
 
 #content {
