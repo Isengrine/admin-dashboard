@@ -35,6 +35,9 @@ html, body {
 a {
   color: inherit;
   text-decoration: inherit;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 button {
@@ -64,32 +67,49 @@ p {
 #container {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: auto 6fr;
+}
+
+#wrapper {
+  background-color: var(--color-ui-01);
 }
 
 #sidebar {
-  background-color: var(--color-ui-01);
+  padding: 0 24px 0 16px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
+#sidebar a {
+  padding: 3px;
+}
+
+#sidebar a:not(#title):hover {
+  background-color: var(--color-ui-05);
+  border-radius: 24px;
+  transition: all 0.4s;
+}
+
 #sidebar-top {
-  margin: 12px 0 0 12px;
+  margin-top: 12px;
 }
 
 #title {
+  font-size: 24px;
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
 #sidebar-middle {
+  padding-left: 8px;
   display: flex;
   flex-direction: column;
 } 
 
 #sidebar-bottom {
+  padding-left: 8px;
   display: flex;
   flex-direction: column;
 }
