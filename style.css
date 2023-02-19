@@ -186,16 +186,21 @@ p {
 }
 
 #greeting {
+  width: clamp(480px, 40%, 720px);
   padding-left: 24px;
 }
 
 #navbar-username {
   font-family: Roboto-Bold;
   font-size: 20px;
+  width: 360px;
 }
 
 #interactions {
+  width: clamp(360px, 30%, 720px);
   padding-right: 24px;
+  display: flex;
+  justify-content: end;
 }
 
 #content {
